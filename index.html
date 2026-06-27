@@ -3,144 +3,162 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shiv Ram Saud — AI Researcher & Engineer</title>
+  <title>Shiv Ram Saud | AI Researcher</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="layout">
-    <aside class="sidebar" id="sidebar">
-      <div class="sidebar-header">
-        <div class="avatar">SRS</div>
-        <h1 class="name">Shiv Ram Saud</h1>
-        <p class="title">Undergraduate AI Researcher</p>
-        <div class="contact-block">
-          <span class="contact-line">saudshivram373@gmail.com</span>
-          <span class="contact-line">Kathmandu, Nepal</span>
-        </div>
-        <div class="social-links">
-          <a href="https://github.com/shivramsaud" target="_blank" rel="noopener" class="social-link">GitHub</a>
-          <a href="https://scholar.google.com" target="_blank" rel="noopener" class="social-link">Scholar</a>
-        </div>
-      </div>
-      <nav class="nav">
-        <a href="#about" class="nav-link">About</a>
-        <a href="#education" class="nav-link">Education</a>
+
+  <!-- ─── Navigation ─── -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">SRS<span class="logo-dot">.</span></a>
+      <nav class="nav" id="nav">
+        <a href="#work" class="nav-link">Work</a>
         <a href="#publications" class="nav-link">Publications</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#grant" class="nav-link">Research Grant</a>
-        <a href="#mentorship" class="nav-link">Mentorship</a>
         <a href="#skills" class="nav-link">Skills</a>
+        <a href="#about" class="nav-link">About</a>
       </nav>
-      <div class="sidebar-footer">
-        <a href="cv.md" class="cv-link" download>Download CV</a>
+      <a href="cv.md" class="btn btn-sm btn-outline" download>CV</a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ─── Hero ─── -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <p class="hero-label">AI Undergraduate &middot; Kathmandu University</p>
+        <h1 class="hero-title">Shiv Ram Saud</h1>
+        <p class="hero-sub">Building language technologies for low-resource languages &mdash; NLP, Computer Vision &amp; IoT.</p>
+        <div class="hero-actions">
+          <a href="#work" class="btn btn-primary">View Projects</a>
+          <a href="https://github.com/shivramsaud" target="_blank" rel="noopener" class="btn btn-ghost">GitHub &nearr;</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-num">3</span><span class="stat-label">Publications</span></div>
+          <div class="stat"><span class="stat-num">5</span><span class="stat-label">Projects</span></div>
+          <div class="stat"><span class="stat-num">8</span><span class="stat-label">Repositories</span></div>
+        </div>
       </div>
-    </aside>
-
-    <main class="main">
-      <section id="about">
-        <h2 class="section-title">About</h2>
-        <p class="about-text">
-          Passionate undergraduate student seeking NLP research opportunities in Speech Recognition,
-          Machine Translation, and Large Language Models for Nepali and other low-resource languages.
-          Bridging academic studies with industrial practice through deep learning and impactful research
-          that advances language technologies in Nepal.
-        </p>
-      </section>
-
-      <section id="education">
-        <h2 class="section-title">Education</h2>
-        <div class="card">
-          <div class="card-header">
-            <span class="card-label">B.Tech in Artificial Intelligence</span>
-            <span class="card-year">2022 – 2026</span>
-          </div>
-          <p class="card-sub">Kathmandu University, Dhulikhel</p>
-          <p class="card-text">ML, Deep Learning, NLP, Computer Vision, IoT Systems</p>
+      <div class="hero-visual">
+        <div class="code-block">
+          <div class="code-line"><span class="kw">class</span> <span class="type">ShivRamSaud</span>:</div>
+          <div class="code-line">    <span class="kw">def</span> <span class="fn">__init__</span>(<span class="self">self</span>):</div>
+          <div class="code-line">        <span class="self">self</span>.focus = <span class="str">"Low-Resource NLP"</span></div>
+          <div class="code-line">        <span class="self">self</span>.stack = [<span class="str">"PyTorch"</span>, <span class="str">"Transformers"</span>, <span class="str">"CLIP"</span>]</div>
+          <div class="code-line">        <span class="self">self</span>.mission = <span class="str">"Advance AI for Nepal"</span></div>
+          <div class="code-line">        <span class="self">self</span>.status = <span class="str">"Open for Research"</span></div>
+          <div class="code-line">    <span class="kw">def</span> <span class="fn">collab</span>(<span class="self">self</span>):</div>
+          <div class="code-line">        <span class="kw">return</span> <span class="str">"saudshivram373@gmail.com"</span></div>
         </div>
-        <div class="card">
-          <div class="card-header">
-            <span class="card-label">+2 Science</span>
-            <span class="card-year">2018 – 2020</span>
-          </div>
-          <p class="card-sub">Kailali Multiple Campus</p>
-        </div>
-      </section>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
 
-      <section id="publications">
+  <!-- ─── Work / Projects ─── -->
+  <section id="work" class="section projects-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Selected Work</h2>
+        <p class="section-desc">Research-driven projects spanning NLP, Computer Vision, and Embedded AI &mdash; each with published code and documentation.</p>
+      </div>
+      <div class="projects-grid" id="projects-grid"></div>
+      <div class="section-footer">
+        <a href="https://github.com/shivramsaud?tab=repositories" target="_blank" rel="noopener" class="btn btn-ghost">All Repositories &nearr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Publications ─── -->
+  <section id="publications" class="section pubs-section">
+    <div class="container">
+      <div class="section-header">
         <h2 class="section-title">Publications</h2>
-        <div class="card pub-card">
-          <div class="card-header">
-            <span class="card-label">Detection of Language, Hate Speech and Targets using FastText and BERT</span>
-            <span class="card-badge">CHiPSAL 2025</span>
-          </div>
-          <p class="card-sub">D. Acharya, S. Dawadi, S. Saud & S. Regmi — ACL Anthology, pp. 334–338</p>
-          <div class="card-footer-links">
-            <a href="https://github.com/shivramsaud/hatespeech-detection" target="_blank" rel="noopener" class="repo-link">Code</a>
-            <a href="#" class="repo-link disabled">Paper</a>
-          </div>
-        </div>
-        <div class="card pub-card">
-          <div class="card-header">
-            <span class="card-label">Nepali Number Plate Recognition with IoT Gate Control</span>
-            <span class="card-badge">ICCTE-2025</span>
-          </div>
-          <p class="card-sub">P. Ghimire, A. Gautam, S. Saud & S. Jha — Springer LNEE (in press)</p>
-          <div class="card-footer-links">
-            <a href="https://github.com/shivramsaud/number-plate-recognition-iot" target="_blank" rel="noopener" class="repo-link">Code</a>
-            <a href="#" class="repo-link disabled">Paper</a>
-          </div>
-        </div>
-        <div class="card pub-card">
-          <div class="card-header">
-            <span class="card-label">Fine-Grained Toxicity Detection in Online Gaming (GameTox)</span>
-            <span class="card-badge">EEUCA 2026</span>
-          </div>
-          <p class="card-sub">Shared Task — accepted</p>
-          <div class="card-footer-links">
-            <a href="https://github.com/shivramsaud/gametox-detection" target="_blank" rel="noopener" class="repo-link">Code</a>
-          </div>
-        </div>
-      </section>
+        <p class="section-desc">Peer-reviewed research accepted at CHiPSAL (ACL), ICCTE (Springer), and EEUCA.</p>
+      </div>
+      <div class="pubs-list" id="pubs-list"></div>
+    </div>
+  </section>
 
-      <section id="projects">
-        <h2 class="section-title">Projects</h2>
-        <div class="project-grid" id="project-grid"></div>
-      </section>
-
-      <section id="grant">
-        <h2 class="section-title">Research Grant</h2>
-        <div class="card highlight-card">
-          <div class="card-header">
-            <span class="card-label">NAST Research Grant — NPR 1,00,000</span>
-            <span class="card-year">2025</span>
-          </div>
-          <p class="card-sub">IoT-based smart mushroom cultivation project</p>
-          <p class="card-text">Funded by Nepal Academy of Science and Technology. Team of 7. Integrated IoT sensing, edge AI, and computer vision for environmental monitoring.</p>
-        </div>
-      </section>
-
-      <section id="mentorship">
-        <h2 class="section-title">Mentorship &amp; Outreach</h2>
-        <div class="card">
-          <p class="card-text">Impact of low cost digital tools in scaling agroecology — Kathmandu University (2026)</p>
-        </div>
-        <div class="card">
-          <p class="card-text">Raspberry Pi Workshop Mentor — Robotics Club, Kathmandu University (2025)</p>
-        </div>
-      </section>
-
-      <section id="skills">
+  <!-- ─── Skills ─── -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <div class="section-header">
         <h2 class="section-title">Technical Skills</h2>
-        <div class="skills-grid" id="skills-grid"></div>
-      </section>
+        <p class="section-desc">Tools and frameworks I use daily across the full ML lifecycle.</p>
+      </div>
+      <div class="skills-grid" id="skills-grid"></div>
+    </div>
+  </section>
 
-      <footer class="footer">
-        <p>&copy; 2026 Shiv Ram Saud. Built from <a href="https://github.com/shivramsaud/shivramsaud.github.io" target="_blank" rel="noopener">source</a>.</p>
-      </footer>
-    </main>
-  </div>
+  <!-- ─── About ─── -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="about-layout">
+        <div class="about-content">
+          <div class="section-header">
+            <h2 class="section-title">About Me</h2>
+          </div>
+          <p class="about-text">
+            I am an undergraduate AI researcher at Kathmandu University, driven by the challenge of building language
+            technologies for Nepali and other low-resource languages. My work spans speech recognition, machine translation,
+            hate speech detection, and vision-based IoT systems.
+          </p>
+          <p class="about-text">
+            I have published at ACL workshops, received a NAST research grant for IoT-based agriculture, and mentored
+            Raspberry Pi workshops. I am actively seeking NLP research opportunities where I can bridge academic studies
+            with industrial practice.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <span class="highlight-icon">&#x1F3C6;</span>
+              <span class="highlight-text">NAST Research Grant Recipient</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">&#x1F4D6;</span>
+              <span class="highlight-text">ACL Anthology Publication</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">&#x1F4BB;</span>
+              <span class="highlight-text">Raspberry Pi Workshop Mentor</span>
+            </div>
+          </div>
+          <div class="about-contact">
+            <a href="mailto:saudshivram373@gmail.com" class="btn btn-primary">Get in Touch</a>
+            <a href="cv.md" class="btn btn-outline" download>Download CV</a>
+          </div>
+        </div>
+        <div class="about-timeline">
+          <h3 class="timeline-title">Timeline</h3>
+          <div class="timeline" id="timeline"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Footer ─── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <p>&copy; 2026 Shiv Ram Saud.</p>
+      </div>
+      <div class="footer-right">
+        <a href="https://github.com/shivramsaud" target="_blank" rel="noopener" class="footer-link">GitHub</a>
+        <a href="mailto:saudshivram373@gmail.com" class="footer-link">Email</a>
+        <a href="https://shivramsaud.github.io" class="footer-link">shivramsaud.github.io</a>
+      </div>
+    </div>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
