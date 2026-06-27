@@ -1,12 +1,12 @@
 (function(){
   'use strict'
 
-  var na=document.querySelectorAll('.hdr-n a:not(.hdr-cv)')
+  var sbl=document.querySelectorAll('.sbl:not(.sl)')
   var ss=document.querySelectorAll('section[id]')
   function act(){
     var sy=window.scrollY+80,cur=''
     ss.forEach(function(s){var t=s.offsetTop,h=s.offsetHeight;if(sy>=t&&sy<t+h)cur=s.getAttribute('id')})
-    na.forEach(function(n){n.classList.toggle('active',n.getAttribute('href')==='#'+cur)})
+    sbl.forEach(function(n){n.classList.toggle('active',n.getAttribute('href')==='#'+cur)})
   }
   window.addEventListener('scroll',act);act()
 
@@ -18,26 +18,25 @@
 
   var proj=[
     {t:'Semantic Video Retrieval',sem:'6th Sem',
-     d:'Neural text-to-video search using CLIP embeddings and FAISS. Encodes video frames as 512-dim vectors for relevance retrieval from natural language queries.',
+     d:'CLIP + FAISS text-to-video search. Encodes frames as 512-dim embeddings for natural-language shot retrieval.',
      ts:['CLIP','FAISS','PyTorch'],u:'https://github.com/shivramsaud/video-retrieval'},
     {t:'Invasive Plant Classification',sem:'5th Sem',
-     d:'27-class vision classifier for invasive species in Nepal. Benchmarked YOLOv12, ResNet-50, DenseNet-121, ConvNeXtV2 on GBIF-sourced imagery.',
+     d:'27-class vision classifier for invasive plants in Nepal. Benchmarked YOLOv12, ResNet-50, DenseNet-121, ConvNeXtV2 on GBIF data.',
      ts:['YOLOv12','ResNet','ConvNeXtV2'],u:'https://github.com/shivramsaud/invasive-plant-classification'},
     {t:'Hindi-Nepali Machine Translation',sem:'4th Sem',
-     d:'Fairseq transformer with VecMap cross-lingual alignment and WSD. Trained on 20k parallel corpus, evaluated with BLEU, chrF, and TER.',
+     d:'Fairseq transformer with VecMap cross-lingual alignment and WSD. Trained on 20k parallel corpus, BLEU/chrF/TER evaluation.',
      ts:['Fairseq','VecMap','WSD'],u:'https://github.com/shivramsaud/hindi-nepali-machine-translation'},
     {t:'IoT Environmental Monitor',sem:'3rd Sem',
-     d:'End-to-end mushroom farm monitoring with DHT22/CO2 sensors on Arduino, Raspberry Pi edge gateway with SQLite logging, and Pi Camera growth tracking.',
-     ts:['Raspberry Pi','Arduino','CV'],u:'https://github.com/shivramsaud/iot-environmental-monitor'},
+     d:'End-to-end mushroom farm monitor with DHT22/CO2 sensors on Arduino, RPi edge gateway with SQLite, Pi Camera growth tracking.',
+     ts:['Raspberry Pi','Arduino','OpenCV'],u:'https://github.com/shivramsaud/iot-environmental-monitor'},
     {t:'Desktop Text Editor',sem:'2nd Sem',
-     d:'Multi-tab code editor with syntax highlighting, find-and-replace, and line numbers. Built from scratch with Python and CustomTkinter.',
+     d:'Multi-tab code editor with syntax highlighting, find-and-replace, line numbers. Built with Python + CustomTkinter.',
      ts:['Python','Tkinter'],u:'https://github.com/shivramsaud/text-editor-desktop'}
   ]
-  var pg=document.getElementById('proj-g')
+  var pg=document.getElementById('pg')
   if(pg){
     proj.forEach(function(p){
       var c=document.createElement('div');c.className='pc'
-      var b=document.createElement('div');b.className='pc-body'
       var tg=document.createElement('div');tg.className='pc-tags'
       p.ts.forEach(function(t){var s=document.createElement('span');s.className='pc-tag';s.textContent=t;tg.appendChild(s)})
       var n=document.createElement('h3');n.className='pc-t';n.textContent=p.t
@@ -46,8 +45,8 @@
       var se=document.createElement('span');se.className='pc-sem';se.textContent=p.sem
       var l=document.createElement('a');l.className='pc-l';l.href=p.u;l.target='_blank';l.rel='noopener noreferrer';l.textContent='Source \u2197'
       f.appendChild(se);f.appendChild(l)
-      b.appendChild(tg);b.appendChild(n);b.appendChild(d);b.appendChild(f)
-      c.appendChild(b);pg.appendChild(c)
+      c.appendChild(tg);c.appendChild(n);c.appendChild(d);c.appendChild(f)
+      pg.appendChild(c)
     })
   }
 
@@ -62,7 +61,7 @@
      a:'Shared Task (accepted)',dt:'Multi-label XLM-RoBERTa classification on gaming chat logs',
      u:'https://github.com/shivramsaud/gametox-detection'}
   ]
-  var pbl=document.getElementById('pub-l')
+  var pbl=document.getElementById('pl')
   if(pbl){
     pubs.forEach(function(p){
       var b=document.createElement('div');b.className='pb'
@@ -85,18 +84,18 @@
     {l:'Hardware & Deployment',i:['Raspberry Pi','Arduino','ESP32-CAM','Edge AI','IoT Systems','PaddleOCR','OpenCV']},
     {l:'Languages & Tooling',i:['Python','C/C++','Streamlit','CustomTkinter','Git','Linux','SQLite']}
   ]
-  var skg=document.getElementById('skill-g')
+  var skg=document.getElementById('skg')
   if(skg){
     skills.forEach(function(g){
-      var d=document.createElement('div');d.className='skill-c'
-      var l=document.createElement('p');l.className='skill-l';l.textContent=g.l;d.appendChild(l)
-      var i=document.createElement('div');i.className='skill-i'
-      g.i.forEach(function(n){var s=document.createElement('span');s.className='skill-t';s.textContent=n;i.appendChild(s)})
+      var d=document.createElement('div')
+      var l=document.createElement('p');l.className='skl';l.textContent=g.l;d.appendChild(l)
+      var i=document.createElement('div');i.className='ski'
+      g.i.forEach(function(n){var s=document.createElement('span');s.className='skit';s.textContent=n;i.appendChild(s)})
       d.appendChild(i);skg.appendChild(d)
     })
   }
 
-  var tl=[
+  var tld=[
     {d:'2026',l:'Expected Graduation',s:'B.Tech AI, Kathmandu University'},
     {d:'2025',l:'NAST Research Grant',s:'NPR 1,00,000 \u2014 IoT mushroom cultivation'},
     {d:'2025',l:'First Publication',s:'CHiPSAL 2025, ACL Anthology'},
@@ -105,7 +104,7 @@
   ]
   var tle=document.getElementById('tl')
   if(tle){
-    tl.forEach(function(t,i){
+    tld.forEach(function(t,i){
       var c=document.createElement('div');c.className='tli'+(i===0?' cur':'')
       var dd=document.createElement('div');dd.className='tld';dd.textContent=t.d
       var ll=document.createElement('div');ll.className='tll';ll.textContent=t.l
