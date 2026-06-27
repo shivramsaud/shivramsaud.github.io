@@ -3,13 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Shiv Ram Saud</title>
-<meta name="description" content="NLP researcher building language technologies for low-resource languages.">
-<meta property="og:title" content="Shiv Ram Saud">
+<title>Shiv Ram Saud — NLP Researcher</title>
+<meta name="description" content="Low-resource NLP researcher at Kathmandu University. ACL &amp; NAST-funded. Machine translation, hate speech detection, semantic retrieval, vision-based IoT.">
+<meta property="og:title" content="Shiv Ram Saud — NLP Researcher">
+<meta property="og:description" content="Low-resource NLP researcher at Kathmandu University. ACL &amp; NAST-funded.">
 <meta property="og:url" content="https://shivramsaud.github.io">
+<meta property="og:image" content="https://shivramsaud.github.io/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <link rel="icon" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -30,9 +35,10 @@
       </div>
       <div class="sb-bt">
         <a href="https://github.com/shivramsaud" target="_blank" rel="noopener" class="sbl sl">GitHub</a>
-        <a href="https://scholar.google.com" target="_blank" rel="noopener" class="sbl sl">Scholar</a>
-        <a href="mailto:saudshivram373@gmail.com" class="sbl sl">Email</a>
-        <a href="cv.md" download class="sbl sl sl-cv">CV</a>
+        <a href="https://scholar.google.com/citations?user=RJcXNNIAAAAJ&amp;hl=en" target="_blank" rel="noopener" class="sbl sl">Scholar</a>
+        <a href="https://www.linkedin.com/in/shiv-ram-saud-10993940a/" target="_blank" rel="noopener" class="sbl sl">LinkedIn</a>
+        <button class="sbl sl email-btn" data-user="saudshivram373" data-domain="gmail.com" aria-label="Send email to Shiv Ram Saud">Email</button>
+        <a href="cv.pdf" download class="sbl sl sl-cv">CV</a>
       </div>
     </div>
   </aside>
@@ -42,12 +48,12 @@
     <!-- Hero -->
     <section class="hr">
       <h1 class="hn">Hi, I'm Shiv.</h1>
-      <p class="hp">I research low-resource NLP at Kathmandu University, building language technologies for Nepali and underserved communities. My work spans machine translation, hate speech detection, semantic retrieval, and vision-based IoT &mdash; published at ACL and funded by NAST.</p>
+      <p class="hp">I research low-resource NLP at Kathmandu University, with a focus on Newari and other underrepresented languages. My work spans machine translation, hate speech detection, semantic retrieval, and vision-based IoT &mdash; published at ACL and funded by NAST. I'm seeking NLP research internship opportunities to advance language technologies for underserved communities.</p>
       <div class="hm">
+        <span class="hm-ac">ACL Anthology</span>
+        <span class="hm-ac">NAST Grant Recipient</span>
         <span>3 publications</span>
         <span>5 projects</span>
-        <span>8 open-source repos</span>
-        <span class="hm-ac">Open for research collaboration</span>
       </div>
     </section>
 
@@ -57,7 +63,85 @@
         <span class="s2-num">01</span>
         <span class="s2-t">Projects</span>
       </h2>
-      <div class="pg" id="pg"></div>
+      <div class="pg" id="pg">
+        <div class="pc">
+          <div class="pc-tags">
+            <span class="pc-tag">CLIP</span>
+            <span class="pc-tag">FAISS</span>
+            <span class="pc-tag">PyTorch</span>
+          </div>
+          <h3 class="pc-t">Semantic Video Retrieval</h3>
+          <p class="pc-d">CLIP + FAISS text-to-video search. Encodes frames as 512-dim embeddings for natural-language shot retrieval.</p>
+          <div class="pc-f">
+            <span class="pc-sem">6th Sem</span>
+            <a href="https://github.com/shivramsaud/video-retrieval" target="_blank" rel="noopener noreferrer" class="pc-l">Source &nearr;</a>
+          </div>
+        </div>
+        <div class="pc">
+          <div class="pc-tags">
+            <span class="pc-tag">YOLOv12</span>
+            <span class="pc-tag">ResNet</span>
+            <span class="pc-tag">ConvNeXtV2</span>
+          </div>
+          <h3 class="pc-t">Invasive Plant Classification</h3>
+          <p class="pc-d">27-class vision classifier for invasive plants in Nepal. Benchmarked YOLOv12, ResNet-50, DenseNet-121, ConvNeXtV2 on GBIF data.</p>
+          <div class="pc-f">
+            <span class="pc-sem">5th Sem</span>
+            <a href="https://github.com/shivramsaud/invasive-plant-classification" target="_blank" rel="noopener noreferrer" class="pc-l">Source &nearr;</a>
+          </div>
+        </div>
+        <div class="pc">
+          <div class="pc-tags">
+            <span class="pc-tag">Fairseq</span>
+            <span class="pc-tag">VecMap</span>
+            <span class="pc-tag">WSD</span>
+          </div>
+          <h3 class="pc-t">Hindi-Nepali Machine Translation</h3>
+          <p class="pc-d">Fairseq transformer with VecMap cross-lingual alignment and WSD. Trained on 20k parallel corpus, BLEU/chrF/TER evaluation.</p>
+          <div class="pc-f">
+            <span class="pc-sem">4th Sem</span>
+            <a href="https://github.com/shivramsaud/hindi-nepali-machine-translation" target="_blank" rel="noopener noreferrer" class="pc-l">Source &nearr;</a>
+          </div>
+        </div>
+        <div class="pc">
+          <div class="pc-tags">
+            <span class="pc-tag">Raspberry Pi</span>
+            <span class="pc-tag">Arduino</span>
+            <span class="pc-tag">OpenCV</span>
+          </div>
+          <h3 class="pc-t">IoT Environmental Monitor</h3>
+          <p class="pc-d">End-to-end mushroom farm monitor with DHT22/CO2 sensors on Arduino, RPi edge gateway with SQLite, Pi Camera growth tracking.</p>
+          <div class="pc-f">
+            <span class="pc-sem">3rd Sem</span>
+            <a href="https://github.com/shivramsaud/iot-environmental-monitor" target="_blank" rel="noopener noreferrer" class="pc-l">Source &nearr;</a>
+          </div>
+        </div>
+        <div class="pc">
+          <div class="pc-tags">
+            <span class="pc-tag">Python</span>
+            <span class="pc-tag">Tkinter</span>
+          </div>
+          <h3 class="pc-t">Desktop Text Editor</h3>
+          <p class="pc-d">Multi-tab code editor with syntax highlighting, find-and-replace, line numbers. Built with Python + CustomTkinter.</p>
+          <div class="pc-f">
+            <span class="pc-sem">2nd Sem</span>
+            <a href="https://github.com/shivramsaud/text-editor-desktop" target="_blank" rel="noopener noreferrer" class="pc-l">Source &nearr;</a>
+          </div>
+        </div>
+        <div class="pc">
+          <div class="pc-tags">
+            <span class="pc-tag">IoT</span>
+            <span class="pc-tag">Edge AI</span>
+            <span class="pc-tag">ESP32</span>
+            <span class="pc-tag">Dashboard</span>
+          </div>
+          <h3 class="pc-t">IntelliMist &mdash; AI-Powered Vertical Farming</h3>
+          <p class="pc-d">IoT sensor networks + edge AI inference + mobile/web dashboard for urban rooftop farming. Agriculture Ideathon 2026 entry targeting Nepal and Southeast Asia.</p>
+          <div class="pc-f">
+            <span class="pc-sem pc-sem-st">In Progress &mdash; Competition Entry</span>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Publications -->
@@ -65,8 +149,41 @@
       <h2 class="s2">
         <span class="s2-num">02</span>
         <span class="s2-t">Publications</span>
+        <a href="https://orcid.org/0009-0008-0413-9153" target="_blank" rel="noopener noreferrer" class="orcid" aria-label="ORCID iD">ORCID</a>
       </h2>
-      <div class="pl" id="pl"></div>
+      <div class="pl" id="pl">
+        <div class="pb">
+          <div class="pb-h">
+            <span class="pb-t">Detection of Language, Hate Speech and Targets using FastText &amp; BERT</span>
+            <span class="pb-v">CHiPSAL 2025</span>
+          </div>
+          <p class="pb-a">D. Acharya, S. Dawadi, S. Saud &amp; S. Regmi &mdash; ACL Anthology, pp. 334&ndash;338</p>
+          <div class="pb-acts">
+            <a href="https://github.com/shivramsaud/hatespeech-detection" target="_blank" rel="noopener noreferrer" class="pb-link">Code</a>
+            <a href="https://aclanthology.org/volumes/2025.chipsal-1/" target="_blank" rel="noopener noreferrer" class="pb-link">ACL Anthology</a>
+          </div>
+        </div>
+        <div class="pb">
+          <div class="pb-h">
+            <span class="pb-t">Nepali Number Plate Recognition with IoT Gate Control</span>
+            <span class="pb-v">ICCTE 2025</span>
+          </div>
+          <p class="pb-a">P. Ghimire, A. Gautam, S. Saud &amp; S. Jha &mdash; Springer LNEE (in press)</p>
+          <div class="pb-acts">
+            <a href="https://github.com/shivramsaud/number-plate-recognition-iot" target="_blank" rel="noopener noreferrer" class="pb-link">Code</a>
+          </div>
+        </div>
+        <div class="pb">
+          <div class="pb-h">
+            <span class="pb-t">Fine-Grained Toxicity Detection in Online Gaming (GameTox)</span>
+            <span class="pb-v">EEUCA 2026</span>
+          </div>
+          <p class="pb-a">Shared Task (accepted) &mdash; Multi-label XLM-RoBERTa classification on gaming chat logs</p>
+          <div class="pb-acts">
+            <a href="https://github.com/shivramsaud/gametox-detection" target="_blank" rel="noopener noreferrer" class="pb-link">Code</a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Skills -->
@@ -75,7 +192,62 @@
         <span class="s2-num">03</span>
         <span class="s2-t">Skills</span>
       </h2>
-      <div class="skg" id="skg"></div>
+      <div class="skg" id="skg">
+        <div>
+          <p class="skl">Deep Learning &amp; ML</p>
+          <div class="ski">
+            <span class="skit">PyTorch</span>
+            <span class="skit">TensorFlow</span>
+            <span class="skit">Scikit-learn</span>
+            <span class="skit">FAISS</span>
+            <span class="skit">Hugging Face</span>
+            <span class="skit">BERT</span>
+            <span class="skit">FastText</span>
+            <span class="skit">CLIP</span>
+            <span class="skit">XLM-RoBERTa</span>
+            <span class="skit">ResNet</span>
+            <span class="skit">DenseNet</span>
+            <span class="skit">ConvNeXtV2</span>
+            <span class="skit">YOLOv12</span>
+          </div>
+        </div>
+        <div>
+          <p class="skl">NLP &amp; Speech</p>
+          <div class="ski">
+            <span class="skit">IndicNLP</span>
+            <span class="skit">NLTK</span>
+            <span class="skit">spaCy</span>
+            <span class="skit">Piper TTS</span>
+            <span class="skit">Fairseq</span>
+            <span class="skit">VecMap</span>
+            <span class="skit">Word Sense Disambiguation</span>
+          </div>
+        </div>
+        <div>
+          <p class="skl">Hardware &amp; Deployment</p>
+          <div class="ski">
+            <span class="skit">Raspberry Pi</span>
+            <span class="skit">Arduino</span>
+            <span class="skit">ESP32-CAM</span>
+            <span class="skit">Edge AI</span>
+            <span class="skit">IoT Systems</span>
+            <span class="skit">PaddleOCR</span>
+            <span class="skit">OpenCV</span>
+          </div>
+        </div>
+        <div>
+          <p class="skl">Languages &amp; Tooling</p>
+          <div class="ski">
+            <span class="skit">Python</span>
+            <span class="skit">C/C++</span>
+            <span class="skit">Streamlit</span>
+            <span class="skit">CustomTkinter</span>
+            <span class="skit">Git</span>
+            <span class="skit">Linux</span>
+            <span class="skit">SQLite</span>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- About -->
@@ -84,9 +256,35 @@
         <span class="s2-num">04</span>
         <span class="s2-t">About</span>
       </h2>
-      <div class="tl" id="tl"></div>
+      <div class="tl" id="tl">
+        <div class="tli cur">
+          <div class="tld">2026</div>
+          <div class="tll">Expected Graduation</div>
+          <div class="tls">B.Tech AI, Kathmandu University</div>
+        </div>
+        <div class="tli">
+          <div class="tld">2025</div>
+          <div class="tll">NAST Research Grant</div>
+          <div class="tls">NPR 1,00,000 &mdash; IoT mushroom cultivation</div>
+        </div>
+        <div class="tli">
+          <div class="tld">2025</div>
+          <div class="tll">First Publication</div>
+          <div class="tls">CHiPSAL 2025, ACL Anthology</div>
+        </div>
+        <div class="tli">
+          <div class="tld">2025</div>
+          <div class="tll">Raspberry Pi Mentor</div>
+          <div class="tls">Robotics Club, Kathmandu University</div>
+        </div>
+        <div class="tli">
+          <div class="tld">2022</div>
+          <div class="tll">Started B.Tech AI</div>
+          <div class="tls">Kathmandu University</div>
+        </div>
+      </div>
       <div class="ab">
-        <p>Final-year B.Tech AI at Kathmandu University. First-author at CHiPSAL (ACL Anthology), co-author in Springer LNEE, accepted shared task at EEUCA 2026. NAST Research Grant recipient. Raspberry Pi mentor at KU's Robotics Club. I&rsquo;m seeking NLP research opportunities to continue advancing language technologies.</p>
+        <p>Final-year B.Tech AI at Kathmandu University. First-author at CHiPSAL (ACL Anthology), co-author in Springer LNEE, accepted shared task at EEUCA 2026. NAST Research Grant recipient (NPR 1,00,000). Raspberry Pi mentor at KU&rsquo;s Robotics Club. I&rsquo;m seeking NLP research opportunities to continue advancing language technologies.</p>
         <div class="ab-tags">
           <span>NAST Grant Recipient</span>
           <span>ACL Anthology</span>
@@ -97,13 +295,19 @@
 
     <footer class="ft">
       <p>&copy; 2026 Shiv Ram Saud &mdash; built with vanilla HTML/CSS/JS</p>
+      <div class="ft-l">
+        <a href="https://github.com/shivramsaud" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://scholar.google.com/citations?user=RJcXNNIAAAAJ&amp;hl=en" target="_blank" rel="noopener">Scholar</a>
+        <a href="https://www.linkedin.com/in/shiv-ram-saud-10993940a/" target="_blank" rel="noopener">LinkedIn</a>
+        <button class="email-btn" data-user="saudshivram373" data-domain="gmail.com" aria-label="Send email to Shiv Ram Saud">Email</button>
+      </div>
     </footer>
 
   </main>
 </div>
 
-<button class="up" id="up">
-  <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 2.5v9M3 6.5l4-4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<button class="up" id="up" aria-label="Scroll to top">
+  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M7 2.5v9M3 6.5l4-4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
 </button>
 <script src="script.js"></script>
 </body>

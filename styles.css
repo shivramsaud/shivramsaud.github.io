@@ -55,6 +55,10 @@ a{color:inherit;text-decoration:none}
 .sl:hover{color:var(--ac);background:transparent!important}
 .sl-cv{color:var(--ac);font-weight:600!important}
 .sl-cv:hover{color:var(--ac2)}
+.email-btn{background:none;border:none;cursor:pointer;font-family:inherit;font-size:.68rem;color:var(--tx3);padding:6px 10px;text-align:left;border-radius:var(--r);transition:var(--t);border:1px solid transparent}
+.email-btn:hover{color:var(--ac);background:transparent!important}
+.sb-bt .email-btn{font-size:.68rem;color:var(--tx3);padding:6px 10px}
+.sb-bt .email-btn:hover{color:var(--ac)}
 
 /* ─── Main ─── */
 .mc{flex:1;padding:40px 48px 48px;min-width:0}
@@ -92,6 +96,7 @@ a{color:inherit;text-decoration:none}
 .pc-d{font-size:.75rem;color:var(--tx2);line-height:1.55;margin-bottom:12px}
 .pc-f{display:flex;justify-content:space-between;align-items:center}
 .pc-sem{font-size:.68rem;color:var(--tx3);font-weight:500}
+.pc-sem-st{font-size:.62rem;font-weight:600;color:var(--ac2);padding:2px 8px;background:var(--acd);border:1px solid var(--acg);border-radius:3px}
 .pc-l{
   font-size:.7rem;font-weight:600;color:var(--ac2);
   padding:3px 10px;border:1px solid var(--acg);border-radius:4px;transition:var(--t)
@@ -121,6 +126,8 @@ a{color:inherit;text-decoration:none}
 .pb-link:hover{background:var(--acd)}
 
 /* ─── Skills ─── */
+.orcid{font-size:.65rem;font-weight:600;color:var(--ac2);padding:2px 8px;border:1px solid var(--acg);border-radius:3px;transition:var(--t);margin-left:auto}
+.orcid:hover{background:var(--acd)}
 .skg{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px}
 .skl{font-size:.66rem;font-weight:600;color:var(--tx3);text-transform:uppercase;letter-spacing:.06em;padding-bottom:6px;border-bottom:1px solid var(--bdr);margin-bottom:8px}
 .ski{display:flex;flex-wrap:wrap;gap:4px}
@@ -155,7 +162,10 @@ a{color:inherit;text-decoration:none}
 }
 
 /* ─── Footer ─── */
-.ft{padding-top:16px;border-top:1px solid var(--bdr);font-size:.68rem;color:var(--tx3)}
+.ft{display:flex;justify-content:space-between;align-items:center;padding-top:16px;border-top:1px solid var(--bdr);font-size:.68rem;color:var(--tx3)}
+.ft-l{display:flex;gap:12px;align-items:center}
+.ft-l a,.ft-l .email-btn{color:var(--tx3);font-size:.68rem;padding:2px 4px}
+.ft-l a:hover,.ft-l .email-btn:hover{color:var(--ac)}
 
 /* ─── Back to top ─── */
 .up{
@@ -185,6 +195,8 @@ a{color:inherit;text-decoration:none}
   .sbl{padding:4px 8px;font-size:.65rem}
   .sb-bt{flex-direction:row;gap:8px;padding-top:0;border-top:none;margin-left:12px}
   .sl{font-size:.65rem}
+  .sb-bt .email-btn{font-size:.65rem;padding:4px 8px}
+  .ft{flex-direction:column;gap:8px;text-align:center}
   .mc{padding:24px 20px}
   .hn{font-size:1.8rem}
   .pg{grid-template-columns:1fr}
